@@ -1,0 +1,45 @@
+body {
+    background-color: cadetblue;
+    color: white;
+    font-family: sans-serif;
+    min-width: 230px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 1rem;
+  }
+  .messageContainer{
+    position: relative;
+  }
+h3{
+  left: 42px;
+  position: absolute;
+  top: 199px;
+  border-radius: 1px;
+  color: aqua;margin-bottom: 20px;
+}
+p{
+  padding-top: 10px;
+}
+  @media (max-width: 230px) {
+    form {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .emogie{
+      flex-direction: column;
+     
+      justify-content: space-between;
+    }
+    span{
+      display: flex;
+    }
+  }
+  /* @media (min-width: 900px) {
+    .box {
+      width: 23%;
+    }
+  } */ 

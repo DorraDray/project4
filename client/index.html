@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer type="module"></script>
+</head>
+<body>
+    <form id="messageForm">
+        <label>User name</label>
+        <input name="name" placeholder="Your user name" />
+  
+        <label>Your message</label>
+        <input name="message" placeholder="Your message" />
+        <div class="emogie"> 
+            <input type="radio" id="happy" name="smiley" value="😊">
+            <label for="happy">😊</label><span style="display: none;"><br> </span>
+            <input type="radio" id="cry" name="smiley" value="😭">
+            <label for="cry">😭</label><span style="display: none;"><br> </span>
+            <input type="radio" id="angry" name="smiley" value="😠">
+            <label for="angry">😠</label><span style="display: none;"><br> </span>
+            <input type="radio" id="love" name="smiley" value="😍">
+            <label for="love">😍</label>
+        </div>
+  
+        <button>Send</button>
+      </form>
+  
+      <h3 id="messageTitle"></h3>
+      <div id="messageContainer"></div>
+</body>
+</html>
