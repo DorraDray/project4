@@ -40,7 +40,7 @@ async function deleteMessage(id) {
   const response = await fetch("http://localhost:8080/messages/"+id, {
     method: "DELETE"
   });
-  document.getElementById("messqge-"+id).remove();
+  document.getElementById("message-"+id).remove();
   messageCount--;
   renderTilte();
 }
@@ -51,7 +51,7 @@ async function deleteMessage(id) {
 
   function renderMessage(message) {
       const p = document.createElement("p");
-      p.id = "messqge-"+message.id;
+      p.id = "message-"+message.id;
       p.textContent = `${message.smiley}  ${message.name}  sayd: ${message.message}`;
       const button = document.createElement("button");
       button.textContent = "Delete";
